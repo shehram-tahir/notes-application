@@ -79,7 +79,7 @@ Endpoint: /api/notes/<id>/
 ## Run Tests
 Test coverage is not complete yet
 ```bash
-pyest
+pyest --create-db
 ```
 
 ### Challenges faced?
