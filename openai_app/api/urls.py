@@ -5,5 +5,5 @@ from .views.views import OpenAIView
 
 
 urlpatterns = [
-    path('summarize/note/<int:note_id>', OpenAIView.as_view()),
+    path('summarize/note/<int:note_id>/', OpenAIView.as_view()),
 ]

@@ -7,12 +7,18 @@ from ..utils.openai_utils import get_note_summarization
 
 class OpenAIView(GenericAPIView):
 
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     serializer_class = NoteSerializer
 
     def get(self, request, **kwargs):
         """
-        Return a list of all users.
+        Returns the summarized note text
+
+        Parameters:
+                request:
+                kwargs:
+         Returns:
+                Text (str): Summarized text
         """
         serilizer = self.get_serializer(data=kwargs)
         serilizer.is_valid(raise_exception=True)

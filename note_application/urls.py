@@ -24,7 +24,7 @@ from rest_framework_simplejwt.views import (
 )
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('notes/', include(('notes.urls', 'notes'), namespace='notes'),),
+    path('', include(('notes.urls', 'notes'), namespace='notes'),),
     path('', include('openai_app.urls'), ),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
