@@ -74,7 +74,7 @@ Body: {
 Note summarization
 ```bash
 Method: POST
-Endpoint: /api/notes/<id>/
+Endpoint: /api/summarize/note/<id>/
 ```
 ## Run Tests
 Test coverage is not complete yet
